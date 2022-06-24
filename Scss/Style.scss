@@ -1,0 +1,192 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+header{
+
+   
+    background-color: #00FFAB;
+ 
+
+}
+
+header h1{
+
+    text-align: center;
+    font-size: 40px;
+   font-family: cursive;
+    text-decoration:none ;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+   
+
+}
+
+
+nav ul li {
+    list-style-type: none;
+    background-color: aquamarine;
+    margin: 5px;
+    display: inline-block;  
+    font-family: cursive; 
+    border-radius: 50px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;  
+
+}
+
+
+nav{
+    background-color:#14C38E ;
+    
+} 
+
+
+
+.card{
+
+
+    display: grid;
+    grid-template-columns: repeat(2 0.5fr) ;
+    grid-template-rows: 5px 5 px ;
+ 
+
+}
+
+
+main{
+    background-color:#39f0b9;
+    padding: 50px;
+display: grid;
+grid-template-areas: "cardimg1 cardimg4"
+                      "cardimg3 cardimag2";
+
+           text-align: center; 
+           font-family: cursive;  
+           
+          
+                    
+}
+
+.card-text{
+    color: white;
+}
+
+.colorfooter{
+    background-color: #39f0b9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+       
+        
+       
+}
+.colorfooter2{
+    background-color: #39f0b9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+       padding: 100px;
+        
+       
+}
+
+
+
+.textofooter{
+    color: white;
+    
+  
+}
+.formulario{
+    min-height: 77vh;
+}
+
+.main-nosotros{
+    background-color:#39f0b9;
+    padding: 50px;
+display: grid;
+grid-template-areas: 
+                     "imagen1 imagen2"
+                      "imagen3 imagen4";
+
+           justify-content: center;
+           
+          
+                    
+}
+.mainNosotros{
+    background-color:#39f0b9;
+    padding: 50px;
+display: grid;
+grid-template-areas: 
+                     "imagen1 imagen2"
+                      "imagen3 ";
+
+           justify-content: center;
+           
+          
+                    
+}
+.tratamientos{
+text-align: center;
+background-color: #00FFAB;
+
+}
+.pacientes{
+    text-align: center;
+background-color: #00FFAB;
+
+
+}
+
+
+.datos{
+    text-align: center;
+background-color: #00FFAB;
+
+
+}
+
+
+
+.formulario{
+    background-color: #39f0b9;
+   
+   
+}
+.promociones{
+    text-align: center;
+    background-color: #00FFAB;
+    
+    }
+.imagen1{
+    padding: 5px;
+   
+}
+    
+  
+
+.imagen2{
+    padding: 5px;
+   
+}
+
+.imagen3{
+    padding: 5px;
+   
+}
+
+.imagen4{
+    padding: 5px;
+    
+}
+
+@media screen and (min-width: 600px) {
+
+    
+}
