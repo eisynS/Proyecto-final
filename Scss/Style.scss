@@ -1,12 +1,11 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
 header{
 
    
     background-color: #00FFAB;
- 
+ width: auto;
 
 }
 
@@ -49,36 +48,69 @@ nav{
     
 } 
 
+section.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: pink;
+    
+   
+   
+}
 
-
-.card{
-
-
+div.card-grid {
     display: grid;
-    grid-template-columns: repeat(2 0.5fr) ;
-    grid-template-rows: 5px 5 px ;
- 
+    grid-template-areas:"card-img card-titulo"
+                        "card-img cardtext"
+                                        ;
+                        background-color: yellow;
+                        padding: 10px;
+                 
+                        height: 400px;
+                        
+                       
+}
 
+div.card-img{
+   grid-area: card-img;
+
+                      background-color: red;
+                      padding: 10px;
+                      height: 320px;
+   
+                     
 }
 
 
-main{
-    background-color:#39f0b9;
-    padding: 50px;
-display: grid;
-grid-template-areas: "cardimg1 cardimg4"
-                      "cardimg3 cardimag2";
+div.card-titulo{
+    grid-area: card-titulo;
+    text-align: left;
+  
+              
+                          
+background-color: aquamarine;
+padding: 10px;
+width: auto;
+height: 50px;
+font-size: 11px;
 
-           text-align: center; 
-           font-family: cursive;  
-           
-          
-                    
+
+    
+}
+div.cardtext{
+    grid-area: cardtext;
+    background-color: blue;
+    padding: 10px;
+    height: 210px;
+    font-size: 15px;
+  
 }
 
-.card-text{
-    color: white;
-}
+
+
+
+
+
 
 .colorfooter{
     background-color: #39f0b9;
@@ -96,7 +128,6 @@ grid-template-areas: "cardimg1 cardimg4"
 }
 
 
-
 .textofooter{
     color: white;
     
@@ -106,32 +137,7 @@ grid-template-areas: "cardimg1 cardimg4"
     min-height: 77vh;
 }
 
-.main-nosotros{
-    background-color:#39f0b9;
-    padding: 50px;
-display: grid;
-grid-template-areas: 
-                     "imagen1 imagen2"
-                      "imagen3 imagen4";
 
-           justify-content: center;
-           
-          
-                    
-}
-.mainNosotros{
-    background-color:#39f0b9;
-    padding: 50px;
-display: grid;
-grid-template-areas: 
-                     "imagen1 imagen2"
-                      "imagen3 ";
-
-           justify-content: center;
-           
-          
-                    
-}
 .tratamientos{
 text-align: center;
 background-color: #00FFAB;
@@ -161,32 +167,126 @@ background-color: #00FFAB;
 }
 .promociones{
     text-align: center;
-    background-color: #00FFAB;
+    background-color: #f700ff;
     
     }
-.imagen1{
-    padding: 5px;
-   
-}
-    
-  
 
-.imagen2{
-    padding: 5px;
-   
-}
-
-.imagen3{
-    padding: 5px;
-   
-}
-
-.imagen4{
-    padding: 5px;
-    
-}
 
 @media screen and (min-width: 600px) {
+header{
+    width: auto;
+
+    .container{
+      
+        height: 900px;
+       
+    }
+}
+div.card-grid {
+width: auto;
+display: grid;
+grid-template-areas:"card-img card-titulo"
+                    "card-img cardtext";
+                        
+                       
+}
+
+div.card-titulo{
+
+width: auto;
+font-size: 20px;
+text-align: center;
 
     
 }
+
+div.cardtext{
+ width: auto;
+    font-size: 25px;
+  
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenedor{
+
+        display: grid;
+        grid-template-areas: "card1 card2"
+                             "card3 card4";
+
+    }
+
+    div.card-grid{
+        width: 1250px;
+    }
+    .container{
+      padding: 40px;
+        height: 50px;
+       
+    }
+
+   
+}
+
+div.carrusel{
+    
+    background-color: #f700ff;
+   
+   
+    
+}
+
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+    
+ 
+
+
+  
+
+   
+
+
