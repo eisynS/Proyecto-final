@@ -8377,18 +8377,18 @@ section.contenedor {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  background-color: pink; }
+  background-color: #2de078; }
 
 div.card-grid {
   display: grid;
   grid-template-areas: "card-img card-titulo" "card-img cardtext";
-  background-color: yellow;
+  background-color: rgba(9, 255, 0, 0.822);
   padding: 10px;
   height: 400px; }
 
 div.card-img {
   grid-area: card-img;
-  background-color: red;
+  background-color: #3cc295;
   padding: 10px;
   height: 320px; }
 
@@ -8403,7 +8403,7 @@ div.card-titulo {
 
 div.cardtext {
   grid-area: cardtext;
-  background-color: blue;
+  background-color: #1495ac;
   padding: 10px;
   height: 210px;
   font-size: 15px; }
