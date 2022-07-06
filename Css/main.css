@@ -8470,7 +8470,7 @@ div.cardtext {
     height: 50px; } }
 
 div.carrusel {
-  background-color: #f700ff; }
+  background-color: #179ba0; }
 
 .title {
   text-align: center;
@@ -8503,3 +8503,8 @@ div.carrusel {
 .container .card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.carousel-inner img {
+  width: 50%;
+  height: 50%;
+  align-content: center; }
